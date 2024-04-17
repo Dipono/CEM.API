@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CEM.API.props" />
+</Project>

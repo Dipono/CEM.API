@@ -1,0 +1,14 @@
+D:\CEM\CEM.API\CEM.Model\bin\Debug\net6.0\CEM.Model.deps.json
+D:\CEM\CEM.API\CEM.Model\bin\Debug\net6.0\CEM.Model.runtimeconfig.json
+D:\CEM\CEM.API\CEM.Model\bin\Debug\net6.0\CEM.Model.dll
+D:\CEM\CEM.API\CEM.Model\bin\Debug\net6.0\CEM.Model.pdb
+D:\CEM\CEM.API\CEM.Model\obj\Debug\net6.0\CEM.Model.csproj.AssemblyReference.cache
+D:\CEM\CEM.API\CEM.Model\obj\Debug\net6.0\CEM.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\CEM\CEM.API\CEM.Model\obj\Debug\net6.0\CEM.Model.AssemblyInfoInputs.cache
+D:\CEM\CEM.API\CEM.Model\obj\Debug\net6.0\CEM.Model.AssemblyInfo.cs
+D:\CEM\CEM.API\CEM.Model\obj\Debug\net6.0\CEM.Model.csproj.CoreCompileInputs.cache
+D:\CEM\CEM.API\CEM.Model\obj\Debug\net6.0\CEM.Model.dll
+D:\CEM\CEM.API\CEM.Model\obj\Debug\net6.0\refint\CEM.Model.dll
+D:\CEM\CEM.API\CEM.Model\obj\Debug\net6.0\CEM.Model.pdb
+D:\CEM\CEM.API\CEM.Model\obj\Debug\net6.0\CEM.Model.genruntimeconfig.cache
+D:\CEM\CEM.API\CEM.Model\obj\Debug\net6.0\ref\CEM.Model.dll
