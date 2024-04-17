@@ -32,11 +32,6 @@ namespace CEM.Services
             return complain;
         }
 
-        IEnumerable<Complain> ICEMService.GetAllComplainsAsync()
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<User> LoginAsync(string phoneNo, string password)
         {
             var existUser = CheckExistingAccount(phoneNo);
@@ -62,9 +57,77 @@ namespace CEM.Services
 
         public IEnumerable<Complain> GetComplainsByUserId(int Id)
         {
-            var casted = _dbContext.Complains.Where(x => x.UserId == Id).ToList();
+            var complainList = _dbContext.Complains.Where(x => x.UserId == Id).ToList();
 
-            return casted;
+            return complainList;
         }
+
+        public IEnumerable<User_Complain> GetComplainResponse(int user_complainId)
+        {
+            var complainListRespond = _dbContext.User_Complains.Where(x => x.ComplainId == user_complainId).ToList();
+
+            return complainListRespond;
+        }
+
+        public string ChangeClosedLog(int compalinId)
+        {
+            var costermerComplain = _dbContext.Complains.SingleOrDefault(k => k.Id == compalinId);
+            costermerComplain.Closed = true;
+            _dbContext.SaveChanges();
+            return "Updated successefully";
+        }
+        public string ChangeSatisfaction(int compalinId)
+        {
+            var costermerComplain = _dbContext.Complains.SingleOrDefault(k => k.Id == compalinId);
+            costermerComplain.Satisfied = true;
+            _dbContext.SaveChanges();
+            return "Updated successefully";
+        }
+
+        public async Task<User_Complain> AddUserRespond(User_Complain user_respond)
+        {
+            user_respond.DateCreated = DateTime.Now;
+            await _dbContext.User_Complains.AddAsync(user_respond);
+            await _dbContext.SaveChangesAsync();
+            return user_respond;
+        }
+
+        public IEnumerable<UserComplainDetails> GetAllAllUsersDetailsAsync()
+        {
+            var complainList = (from B in _dbContext.Complains
+                               join A in _dbContext.Users on B.UserId
+                               equals A.Id
+                               select new UserComplainDetails()
+                               { 
+                                   UserId = B.UserId,
+                                   Surname = A.Surname,
+                                   Name = A.Name,
+                                   PhoneNo = A.PhoneNo,
+                                   Id = B.Id,
+                                   ComplainId=B.Id,
+                                   Subject = B.Subject,
+                                   SubjectDescription= B.ComplainDescription,
+                                   Closed = B.Closed,
+                                   Satisfied = B.Satisfied,
+                                   DateCreated = B.Date,
+                                   Location= B.Location
+                               }).ToList();
+
+            return complainList;
+        }
+
+        public async Task<Forum> AddTopicToForumAsync(Forum forum)
+        {
+            forum.DateCreated = DateTime.Now;
+            await _dbContext.Forums.AddAsync(forum);
+            await _dbContext.SaveChangesAsync();
+            return forum;
+        }
+
+        public IEnumerable<Forum> GetAllTopicForumAsync()
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }

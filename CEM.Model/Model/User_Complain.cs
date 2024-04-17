@@ -12,11 +12,11 @@ namespace CEM.Model.Model
     {
         public User_Complain()
         {
-            Name = string.Empty;
+            Respond = string.Empty;
         }
         [Key]
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Respond { get; set; }
         public DateTime DateCreated { get; set; }
 
         [ForeignKey("User")]
