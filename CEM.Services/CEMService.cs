@@ -76,6 +76,7 @@ namespace CEM.Services
             _dbContext.SaveChanges();
             return "Updated successefully";
         }
+       
         public string ChangeSatisfaction(int compalinId)
         {
             var costermerComplain = _dbContext.Complains.SingleOrDefault(k => k.Id == compalinId);
@@ -127,6 +128,26 @@ namespace CEM.Services
         public IEnumerable<Forum> GetAllTopicForumAsync()
         {
             throw new NotImplementedException();
+        }
+
+        public IEnumerable<UsersForum> GetAllAllUsersForumAsync()
+        {
+            var complainList = (from B in _dbContext.Forums
+                                join A in _dbContext.Users on B.UserId
+                                equals A.Id
+                                select new UsersForum()
+                                {
+                                    UserId = B.UserId,
+                                    Surname = A.Surname,
+                                    Name = A.Name,
+                                    TopicDescription = B.TopicDescription,
+                                    Id = B.Id,
+                                    ForumId = B.Id,
+                                    Topic = B.Topic,
+                                    DateCreated = B.DateCreated
+                                }).ToList();
+
+            return complainList;
         }
 
     }

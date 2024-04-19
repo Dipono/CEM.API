@@ -1,27 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CEM.Model.Model
 {
-    public class Forum
+    public class UsersForum
     {
-        public Forum() 
-        { 
+        public UsersForum() { 
+            Name = string.Empty;
+            Surname = string.Empty;
             Topic = string.Empty;
             TopicDescription = string.Empty;
         }
-        [Key]
         public int Id { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public int UserId { get; set; }
+        public int ForumId { get; set; }
         public string Topic { get; set; }
         public string TopicDescription { get; set; }
         public DateTime DateCreated { get; set; }
-
-        [ForeignKey("User")]
-        public int UserId { get; set; }
     }
 }

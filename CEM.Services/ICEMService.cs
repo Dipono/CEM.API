@@ -15,6 +15,7 @@ namespace CEM.Services
         Task<User_Complain> AddUserRespond(User_Complain complain);
         IEnumerable<UserComplainDetails> GetAllAllUsersDetailsAsync();
         Task<Forum> AddTopicToForumAsync(Forum forum);
+        IEnumerable<UsersForum> GetAllAllUsersForumAsync();
         IEnumerable<Forum> GetAllTopicForumAsync();
 
     }

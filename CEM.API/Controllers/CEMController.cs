@@ -2,6 +2,8 @@
 using CEM.Services;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
+using System.Data;
 
 namespace CEM.API.Controllers
 {
@@ -10,9 +12,11 @@ namespace CEM.API.Controllers
     public class CEMController : Controller
     {
         private readonly ICEMService _cemService;
-        public CEMController(ICEMService cemService)
+        private readonly IConfiguration _configuration;
+        public CEMController(ICEMService cemService, IConfiguration configuration)
         {
             _cemService = cemService;
+            _configuration = configuration;
         }
 
         [HttpPost]
@@ -166,7 +170,7 @@ namespace CEM.API.Controllers
             {
                 responseWrapper = new ResponseWrapper
                 {
-                    Message = "Unable to send your request",
+                    Message = "Unable to send your topic",
                     Success = false
                 };
 
@@ -174,7 +178,7 @@ namespace CEM.API.Controllers
             }
             responseWrapper = new ResponseWrapper
             {
-                Message = "Your request has been send seccussfully",
+                Message = "Your topic has been send seccussfully",
                 Results = results,
                 Success = true
             };
@@ -182,9 +186,25 @@ namespace CEM.API.Controllers
             return Ok(responseWrapper);
         }
 
+        [HttpGet]
+        public List<UsersForum> GetAllForumList()
+        {
+            var results = _cemService.GetAllAllUsersForumAsync().ToList();
 
+            return results;
+        }
+
+        [HttpGet]
+        public JsonResult GetAnalytics()
+        {
+            SqlConnection con = new SqlConnection(_configuration.GetConnectionString("CEMDb").ToString());
+            SqlDataAdapter da = new SqlDataAdapter("Select * from Users", con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            User user = new User();
+
+        }
     }
-
 
 }
 
