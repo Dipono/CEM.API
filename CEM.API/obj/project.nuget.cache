@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B6Ly1eDqW5OYsb/mOhmkifll1ddbtWsNQcI2yRWvWtIdtbER5zGoT9pVfO63Qt9i5mDCG5+NEg+Lx2cvqM3RTQ==",
+  "dgSpecHash": "GsyCcbcqHisskCnPdA3d3kG1F7yXnYSBuzAPUVMbO0J+NZM3/e8kiXdUsMSLz0nuZ7V0Jqix7l2eKKpRDt4veQ==",
   "success": true,
-  "projectFilePath": "D:\\CEM\\CEM.API\\CEM.API\\CEM.API.csproj",
+  "projectFilePath": "D:\\0 Current apps\\SFG\\CEM.API\\CEM.API\\CEM.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LEBUTE\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\LEBUTE\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -44,6 +44,7 @@
     "C:\\Users\\LEBUTE\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\LEBUTE\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\LEBUTE\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\LEBUTE\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\LEBUTE\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\LEBUTE\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\LEBUTE\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",

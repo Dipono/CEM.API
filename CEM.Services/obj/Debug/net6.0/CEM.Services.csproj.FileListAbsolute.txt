@@ -13,3 +13,18 @@ D:\CEM\CEM.API\CEM.Services\obj\Debug\net6.0\CEM.Services.dll
 D:\CEM\CEM.API\CEM.Services\obj\Debug\net6.0\refint\CEM.Services.dll
 D:\CEM\CEM.API\CEM.Services\obj\Debug\net6.0\CEM.Services.pdb
 D:\CEM\CEM.API\CEM.Services\obj\Debug\net6.0\ref\CEM.Services.dll
+D:\0 Current apps\SFG\CEM.API\CEM.Services\bin\Debug\net6.0\CEM.Services.deps.json
+D:\0 Current apps\SFG\CEM.API\CEM.Services\bin\Debug\net6.0\CEM.Services.dll
+D:\0 Current apps\SFG\CEM.API\CEM.Services\bin\Debug\net6.0\CEM.Services.pdb
+D:\0 Current apps\SFG\CEM.API\CEM.Services\bin\Debug\net6.0\CEM.Model.dll
+D:\0 Current apps\SFG\CEM.API\CEM.Services\bin\Debug\net6.0\CEM.Model.pdb
+D:\0 Current apps\SFG\CEM.API\CEM.Services\obj\Debug\net6.0\CEM.Services.csproj.AssemblyReference.cache
+D:\0 Current apps\SFG\CEM.API\CEM.Services\obj\Debug\net6.0\CEM.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\0 Current apps\SFG\CEM.API\CEM.Services\obj\Debug\net6.0\CEM.Services.AssemblyInfoInputs.cache
+D:\0 Current apps\SFG\CEM.API\CEM.Services\obj\Debug\net6.0\CEM.Services.AssemblyInfo.cs
+D:\0 Current apps\SFG\CEM.API\CEM.Services\obj\Debug\net6.0\CEM.Services.csproj.CoreCompileInputs.cache
+D:\0 Current apps\SFG\CEM.API\CEM.Services\obj\Debug\net6.0\CEM.Services.csproj.CopyComplete
+D:\0 Current apps\SFG\CEM.API\CEM.Services\obj\Debug\net6.0\CEM.Services.dll
+D:\0 Current apps\SFG\CEM.API\CEM.Services\obj\Debug\net6.0\refint\CEM.Services.dll
+D:\0 Current apps\SFG\CEM.API\CEM.Services\obj\Debug\net6.0\CEM.Services.pdb
+D:\0 Current apps\SFG\CEM.API\CEM.Services\obj\Debug\net6.0\ref\CEM.Services.dll

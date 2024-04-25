@@ -12,6 +12,9 @@ namespace CEM.Services
         IEnumerable<User_Complain> GetComplainResponse(int user_complainId);
         string ChangeClosedLog(int compalinId);
         string ChangeSatisfaction(int compalinId);
+        Boolean ForgotPassword(User user);
+        Boolean CheckExistingEmail(string email);
+
         Task<User_Complain> AddUserRespond(User_Complain complain);
         IEnumerable<UserComplainDetails> GetAllAllUsersDetailsAsync();
         Task<Forum> AddTopicToForumAsync(Forum forum);

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4cK0WWYyKiHFU04PEvFxx+GpxJeyZn95W9cyA0KioI4RoWiq+dmd6HWtsXS8JOghXh5J2aHqsJDrdyiGCtj8sQ==",
+  "dgSpecHash": "4HzyUE458c2HhPO4RUcjua9d5mKf3wje1sKV6MUEH1E9FG6sZIMqLuw22VeBLDZbVqa0oNzGZCkOKDFCLhTfLQ==",
   "success": true,
-  "projectFilePath": "D:\\CEM\\CEM.API\\CEM.Model\\CEM.Model.csproj",
+  "projectFilePath": "D:\\0 Current apps\\SFG\\CEM.API\\CEM.Model\\CEM.Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LEBUTE\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\LEBUTE\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

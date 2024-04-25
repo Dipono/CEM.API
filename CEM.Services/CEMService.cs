@@ -19,9 +19,9 @@ namespace CEM.Services
         }
 
         // Checking whether the account exist or not
-        private bool CheckExistingAccount(string phoneNo)
+        private bool CheckExistingAccount(string email)
         {
-            return _dbContext.Users.Any(x => x.PhoneNo == phoneNo);
+            return _dbContext.Users.Any(x => x.Email == email);
         }
 
         public async Task<Complain> AddComplainAsync(Complain complain)
@@ -32,14 +32,14 @@ namespace CEM.Services
             return complain;
         }
 
-        public async Task<User> LoginAsync(string phoneNo, string password)
+        public async Task<User> LoginAsync(string email, string password)
         {
-            var existUser = CheckExistingAccount(phoneNo);
+            var existUser = CheckExistingAccount(email);
             if(!existUser)
             {
                 return await Task.FromResult(new User());
             }
-            var user = await _dbContext.Users.SingleAsync(x => x.PhoneNo == phoneNo);
+            var user = await _dbContext.Users.SingleAsync(x => x.Email == email);
             if (user.Password == password)
             {
                 return user;
@@ -76,7 +76,21 @@ namespace CEM.Services
             _dbContext.SaveChanges();
             return "Updated successefully";
         }
-       
+
+        public Boolean CheckExistingEmail(string email)
+        {
+            return CheckExistingAccount(email);
+        }
+        public Boolean ForgotPassword(User user)
+        {
+            var existingUser = _dbContext.Users.SingleOrDefault(k => k.Email == user.Email);
+
+            existingUser.Password = user.Password;
+            _dbContext.SaveChanges();
+            return true;
+        }
+
+
         public string ChangeSatisfaction(int compalinId)
         {
             var costermerComplain = _dbContext.Complains.SingleOrDefault(k => k.Id == compalinId);

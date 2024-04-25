@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CEM\\CEM.API\\CEM.Services\\CEM.Services.csproj": {}
+    "D:\\0 Current apps\\SFG\\CEM.API\\CEM.Services\\CEM.Services.csproj": {}
   },
   "projects": {
-    "D:\\CEM\\CEM.API\\CEM.Model\\CEM.Model.csproj": {
+    "D:\\0 Current apps\\SFG\\CEM.API\\CEM.Model\\CEM.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CEM\\CEM.API\\CEM.Model\\CEM.Model.csproj",
+        "projectUniqueName": "D:\\0 Current apps\\SFG\\CEM.API\\CEM.Model\\CEM.Model.csproj",
         "projectName": "CEM.Model",
-        "projectPath": "D:\\CEM\\CEM.API\\CEM.Model\\CEM.Model.csproj",
+        "projectPath": "D:\\0 Current apps\\SFG\\CEM.API\\CEM.Model\\CEM.Model.csproj",
         "packagesPath": "C:\\Users\\LEBUTE\\.nuget\\packages\\",
-        "outputPath": "D:\\CEM\\CEM.API\\CEM.Model\\obj\\",
+        "outputPath": "D:\\0 Current apps\\SFG\\CEM.API\\CEM.Model\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\LEBUTE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,21 +82,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\CEM\\CEM.API\\CEM.Services\\CEM.Services.csproj": {
+    "D:\\0 Current apps\\SFG\\CEM.API\\CEM.Services\\CEM.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CEM\\CEM.API\\CEM.Services\\CEM.Services.csproj",
+        "projectUniqueName": "D:\\0 Current apps\\SFG\\CEM.API\\CEM.Services\\CEM.Services.csproj",
         "projectName": "CEM.Services",
-        "projectPath": "D:\\CEM\\CEM.API\\CEM.Services\\CEM.Services.csproj",
+        "projectPath": "D:\\0 Current apps\\SFG\\CEM.API\\CEM.Services\\CEM.Services.csproj",
         "packagesPath": "C:\\Users\\LEBUTE\\.nuget\\packages\\",
-        "outputPath": "D:\\CEM\\CEM.API\\CEM.Services\\obj\\",
+        "outputPath": "D:\\0 Current apps\\SFG\\CEM.API\\CEM.Services\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\LEBUTE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,14 +108,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\CEM\\CEM.API\\CEM.Model\\CEM.Model.csproj": {
-                "projectPath": "D:\\CEM\\CEM.API\\CEM.Model\\CEM.Model.csproj"
+              "D:\\0 Current apps\\SFG\\CEM.API\\CEM.Model\\CEM.Model.csproj": {
+                "projectPath": "D:\\0 Current apps\\SFG\\CEM.API\\CEM.Model\\CEM.Model.csproj"
               }
             }
           }
@@ -136,7 +146,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
